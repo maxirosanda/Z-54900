@@ -1,0 +1,28 @@
+#contenedorProductos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.tarjetaProducto{
+    width: 250px;
+    border: 1px solid;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+
+}
+.tarjetaProducto img {
+    width: inherit;
+}
+.tarjetaProducto button {
+    border: 0;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+}
