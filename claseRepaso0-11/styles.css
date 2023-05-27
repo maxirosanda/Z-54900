@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.formulario{
+    max-width: 600px;
+    background-color: blueviolet;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.formulario input, .formulario textarea{
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+}
+.formulario input{
+    width: 70px;
+    margin: 0px 10px;
+}
+.formulario input::placeholder, .formulario textarea::placeholder{
+    color: white;
+}
+
+.formulario select {
+    background-color: rgb(89, 19, 155);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+}
+
+.tabla{
+    width: 95%;
+    border: 1px solid ;
+    border-collapse: collapse;
+    margin: auto;
+    border-radius: 10px;
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+
+}
+
+.tabla th ,.tabla td {
+    border: 1px solid;
+    padding: 10px;
+}

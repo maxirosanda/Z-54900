@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <form id="crearItem" class="formulario">
+            <textarea type="text" name="nombre" placeholder="Ingrese nombre del item" minlength="10" maxlength="100" required></textarea>
+            <textarea type="text" name="descripcion" placeholder="Ingrese descripcion del item" minlength="30" maxlength="300" required></textarea>
+            <input type="number" name="precio" placeholder="Precio" min="100" max="1000000" required >
+            <input type="number" name="cantidad" placeholder="Cantidad" min="1" max="1000" required >
+            <textarea type="text" name="paniolero" placeholder="Ingrese nombre del pañolero a cargo" min="8" maxlength="100" required></textarea>
+            <select name="ubicacion">
+                <option value="paniol">Pañol</option>
+                <option value="taller">Taller</option>
+                <option value="aula">Aula</option>
+            </select>
+            <button type="submit">Crear Item</button>
+        </form>
+        <table id="tablaItems" class="tabla">
+            <tr>
+                <th>Nombre</th>
+                <th>Descripcion</th>
+                <th>Precio</th>
+                <th>cantidad</th>
+                <th>Pañolero</th>
+                <th>Ubicacion</th>
+            </tr>
+        </table>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./main.js"></script>
+</body>
+</html>
