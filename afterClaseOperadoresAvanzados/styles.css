@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    margin: 10px;
+}
+.formularioPregunta{
+    background-color: blueviolet;
+    width: 350px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    row-gap: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px auto;
+    color: white;
+
+}
+.formularioPregunta h3{
+    grid-column: 1/3;
+}
+.formularioPregunta input{
+    justify-items:end;
+}
+.formularioPregunta button{
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px;
+}
