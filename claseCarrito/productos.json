@@ -1,0 +1,72 @@
+[
+    {
+      "id": 1,
+      "nombre": "Laptop HP",
+      "precio": 999,
+      "descripcion": "Laptop HP con procesador Intel Core i5, 8GB de RAM y disco duro de 512GB.",
+      "stock": 15
+    },
+    {
+      "id": 2,
+      "nombre": "Monitor Dell",
+      "precio": 249,
+      "descripcion": "Monitor Dell de 24 pulgadas con resolución Full HD y tiempo de respuesta de 5ms.",
+      "stock": 8
+    },
+    {
+      "id": 3,
+      "nombre": "Teclado Logitech",
+      "precio": 59,
+      "descripcion": "Teclado mecánico Logitech con iluminación RGB y switches GX Blue.",
+      "stock": 20
+    },
+    {
+      "id": 4,
+      "nombre": "Mouse inalámbrico",
+      "precio": 29,
+      "descripcion": "Mouse inalámbrico ergonómico con sensor óptico de 1600 DPI.",
+      "stock": 12
+    },
+    {
+      "id": 5,
+      "nombre": "Disco Duro Externo Seagate",
+      "precio": 79,
+      "descripcion": "Disco duro externo Seagate de 2TB con conexión USB 3.0.",
+      "stock": 6
+    },
+    {
+      "id": 6,
+      "nombre": "Impresora Canon",
+      "precio": 129,
+      "descripcion": "Impresora multifuncional Canon con impresión a color y conectividad Wi-Fi.",
+      "stock": 10
+    },
+    {
+      "id": 7,
+      "nombre": "Tarjeta de video NVIDIA",
+      "precio": 399,
+      "descripcion": "Tarjeta de video NVIDIA GeForce RTX 3070 con 8GB de memoria GDDR6.",
+      "stock": 3
+    },
+    {
+      "id": 8,
+      "nombre": "Memoria RAM Corsair",
+      "precio": 89,
+      "descripcion": "Memoria RAM Corsair Vengeance RGB Pro de 16GB (2x8GB) DDR4 3200MHz.",
+      "stock": 18
+    },
+    {
+      "id": 9,
+      "nombre": "Disco SSD Kingston",
+      "precio": 119,
+      "descripcion": "Disco SSD Kingston A2000 de 1TB con velocidad de lectura de hasta 2200MB/s.",
+      "stock": 7
+    },
+    {
+      "id": 10,
+      "nombre": "Router TP-Link",
+      "precio": 39,
+      "descripcion": "Router TP-Link Archer C6 de doble banda con 4 antenas externas.",
+      "stock": 14
+    }
+]

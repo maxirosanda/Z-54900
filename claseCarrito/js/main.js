@@ -1,46 +1,23 @@
-const productos = [
-    {
-        id:1,
-        nombre: "Batle Royale",
-        precio:12000,
-        descripcion: "Las llamadas batallas reales son un tipo de partidas en las que una gran cantidad de jugadores participan de manera individual o en grupo y compiten entre sí hasta que sólo uno de ellos queda en pie.",
-        stock:2,
-        urlImg:"https://i.ibb.co/XyvHrn1/pcgamer-3.jpg"
-    },
-    {
-        id:2,
-        nombre: "God of war",
-        precio:10000,
-        descripcion: "Kratos vuelve a ser padre. Como mentor y protector de Atreus, un hijo determinado a ganarse el respeto de su padre.",
-        stock:5,
-        urlImg:"https://i.ibb.co/XyvHrn1/pcgamer-3.jpg"
-    },
-    {
-        id:3,
-        nombre: "Final fantasy",
-        precio:8000,
-        descripcion: "Final Fantasy XIV: Endwalker es una nueva y gran expansión que hace que esta gran aventura crezca aún más. Puede que resulte algo abrumador, pero es un lugar que nunca fue tan rico, diverso, detallado y divertido de explorar.",
-        stock:4,
-        urlImg:"https://i.ibb.co/XyvHrn1/pcgamer-3.jpg"
-    },
-    {
-        id:4,
-        nombre: "Crew 2",
-        precio:9000,
-        descripcion: "¡Llegó la hora de volver al circuito! En esta nueva temporada de The Crew® 2, conocerán a Chris Forsberg Racing, el triple campeón del mundo de Drift, y a",
-        stock:8,
-        urlImg:"https://i.ibb.co/XyvHrn1/pcgamer-3.jpg"
-    },
-    {
-        id:5,
-        nombre: "Crew 2",
-        precio:9000,
-        descripcion: "¡Llegó la hora de volver al circuito! En esta nueva temporada de The Crew® 2, conocerán a Chris Forsberg Racing, el triple campeón del mundo de Drift, y a",
-        stock:8,
-        urlImg:"https://i.ibb.co/XyvHrn1/pcgamer-3.jpg"
-    }
-]
 
+
+fetch("./productos.json").then((res)=>{
+    console.log(res)
+    return res.json()
+}).then((data)=>{
+    console.log(data)
+}).catch((error)=>{
+  console.log(error)
+})
+
+/*
+const base = async () =>{
+   const respuesta = await fetch("./productos.json")
+   const productos = await respuesta.json()
+   console.log(productos)
+
+}
+base()
+*/
 const carrito = JSON.parse(localStorage.getItem("carrito")) ?? []
 
 const verProducto = ({id,nombre,precio,descripcion,stock,urlImg}) =>{
@@ -74,6 +51,37 @@ const agregarCarrito = (id) =>{
             cantidad
         })
         localStorage.setItem("carrito",JSON.stringify(carrito))
+        /*
+        Swal.fire({
+            icon: 'success',
+            title: 'Producto agregado al carrito',
+            imageUrl: 'https://i.ibb.co/XyvHrn1/pcgamer-3.jpg',
+            imageAlt: 'A tall image',
+            imageWidth:300,
+            imageHeight: 300,
+            showConfirmButton: false,
+            timer: 1500,
+            position: 'center-end',
+            color:"blue",
+            background:"red",
+            backdrop:"rgba(0,0,0,0.9)"
+          
+          })
+          */
+          Toastify({
+            text: "Producto agregado al carrito",
+            duration: 2000,
+            gravity: "bottom", // `top` or `bottom`
+            position: "right", // `left`, `center` or `right`
+            style: {
+                background: "blue",
+                width:"300px",
+                textAlign: "center",
+                borderRadius: "5px"
+              }
+            }).showToast();
+            
+            
     })
 }
 const verProductos = () =>{
@@ -88,3 +96,13 @@ const verProductos = () =>{
 }
 
 verProductos()
+
+Swal.fire({
+    title: '¿Es mayor de 18 años?',
+    icon: 'info',
+    showCancelButton: true,
+    confirmButtonText:'si, soy mayor de 18 años',
+    confirmButtonAriaLabel: 'Thumbs up, great!',
+    cancelButtonText:'No, no soy mayor de 18 años'
+  })
+  
