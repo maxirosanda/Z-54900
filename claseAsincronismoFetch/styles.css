@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.postContenedor{
+    background-color: rgb(16, 17, 97);
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 5px;
+}
+.postContenedor button{
+    cursor: pointer;
+    width: max-content;
+    padding: 5px 20px;
+}
+
+.postContenedor input , .postContenedor textarea{
+    background-color: rgb(16, 17, 97) ;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+}
+.postContenedor form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.postContenedor input:focus , .postContenedor textarea:focus{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid white;
+}
+.postContenedor textarea {
+    height: 100px;
+}

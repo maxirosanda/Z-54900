@@ -1,23 +1,4 @@
 
-
-fetch("./productos.json").then((res)=>{
-    console.log(res)
-    return res.json()
-}).then((data)=>{
-    console.log(data)
-}).catch((error)=>{
-  console.log(error)
-})
-
-/*
-const base = async () =>{
-   const respuesta = await fetch("./productos.json")
-   const productos = await respuesta.json()
-   console.log(productos)
-
-}
-base()
-*/
 const carrito = JSON.parse(localStorage.getItem("carrito")) ?? []
 
 const verProducto = ({id,nombre,precio,descripcion,stock,urlImg}) =>{
@@ -51,28 +32,12 @@ const agregarCarrito = (id) =>{
             cantidad
         })
         localStorage.setItem("carrito",JSON.stringify(carrito))
-        /*
-        Swal.fire({
-            icon: 'success',
-            title: 'Producto agregado al carrito',
-            imageUrl: 'https://i.ibb.co/XyvHrn1/pcgamer-3.jpg',
-            imageAlt: 'A tall image',
-            imageWidth:300,
-            imageHeight: 300,
-            showConfirmButton: false,
-            timer: 1500,
-            position: 'center-end',
-            color:"blue",
-            background:"red",
-            backdrop:"rgba(0,0,0,0.9)"
-          
-          })
-          */
+  
           Toastify({
             text: "Producto agregado al carrito",
             duration: 2000,
-            gravity: "bottom", // `top` or `bottom`
-            position: "right", // `left`, `center` or `right`
+            gravity: "bottom", 
+            position: "right", 
             style: {
                 background: "blue",
                 width:"300px",
@@ -84,8 +49,9 @@ const agregarCarrito = (id) =>{
             
     })
 }
-const verProductos = () =>{
-
+const verProductos = async () =>{
+    const res = await fetch("./productos.json")
+    const productos = await res.json()
     productos.forEach(producto =>{
         if(producto.stock !=0){
             verProducto(producto)
@@ -97,12 +63,3 @@ const verProductos = () =>{
 
 verProductos()
 
-Swal.fire({
-    title: '¿Es mayor de 18 años?',
-    icon: 'info',
-    showCancelButton: true,
-    confirmButtonText:'si, soy mayor de 18 años',
-    confirmButtonAriaLabel: 'Thumbs up, great!',
-    cancelButtonText:'No, no soy mayor de 18 años'
-  })
-  

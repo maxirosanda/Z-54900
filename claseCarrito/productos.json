@@ -1,72 +1,169 @@
 [
-    {
-      "id": 1,
-      "nombre": "Laptop HP",
-      "precio": 999,
-      "descripcion": "Laptop HP con procesador Intel Core i5, 8GB de RAM y disco duro de 512GB.",
-      "stock": 15
-    },
-    {
-      "id": 2,
-      "nombre": "Monitor Dell",
-      "precio": 249,
-      "descripcion": "Monitor Dell de 24 pulgadas con resolución Full HD y tiempo de respuesta de 5ms.",
-      "stock": 8
-    },
-    {
-      "id": 3,
-      "nombre": "Teclado Logitech",
-      "precio": 59,
-      "descripcion": "Teclado mecánico Logitech con iluminación RGB y switches GX Blue.",
-      "stock": 20
-    },
-    {
-      "id": 4,
-      "nombre": "Mouse inalámbrico",
-      "precio": 29,
-      "descripcion": "Mouse inalámbrico ergonómico con sensor óptico de 1600 DPI.",
-      "stock": 12
-    },
-    {
-      "id": 5,
-      "nombre": "Disco Duro Externo Seagate",
-      "precio": 79,
-      "descripcion": "Disco duro externo Seagate de 2TB con conexión USB 3.0.",
-      "stock": 6
-    },
-    {
-      "id": 6,
-      "nombre": "Impresora Canon",
-      "precio": 129,
-      "descripcion": "Impresora multifuncional Canon con impresión a color y conectividad Wi-Fi.",
-      "stock": 10
-    },
-    {
-      "id": 7,
-      "nombre": "Tarjeta de video NVIDIA",
-      "precio": 399,
-      "descripcion": "Tarjeta de video NVIDIA GeForce RTX 3070 con 8GB de memoria GDDR6.",
-      "stock": 3
-    },
-    {
-      "id": 8,
-      "nombre": "Memoria RAM Corsair",
-      "precio": 89,
-      "descripcion": "Memoria RAM Corsair Vengeance RGB Pro de 16GB (2x8GB) DDR4 3200MHz.",
-      "stock": 18
-    },
-    {
-      "id": 9,
-      "nombre": "Disco SSD Kingston",
-      "precio": 119,
-      "descripcion": "Disco SSD Kingston A2000 de 1TB con velocidad de lectura de hasta 2200MB/s.",
-      "stock": 7
-    },
-    {
-      "id": 10,
-      "nombre": "Router TP-Link",
-      "precio": 39,
-      "descripcion": "Router TP-Link Archer C6 de doble banda con 4 antenas externas.",
-      "stock": 14
-    }
+  {
+    "id": 1,
+    "nombre": "Smartphone",
+    "precio": 599.99,
+    "stock": 10,
+    "urlImg": "https://picsum.photos/id/1/200/200",
+    "descripcion": "Un smartphone de última generación con todas las funciones avanzadas."
+  },
+  {
+    "id": 2,
+    "nombre": "Televisor LED",
+    "precio": 899.99,
+    "stock": 5,
+    "urlImg": "https://picsum.photos/id/2/200/200",
+    "descripcion": "Un televisor LED de alta definición con pantalla de 55 pulgadas."
+  },
+  {
+    "id": 3,
+    "nombre": "Auriculares inalámbricos",
+    "precio": 129.99,
+    "stock": 15,
+    "urlImg": "https://picsum.photos/id/3/200/200",
+    "descripcion": "Auriculares inalámbricos con cancelación de ruido y sonido de alta calidad."
+  },
+  {
+    "id": 4,
+    "nombre": "Tablet",
+    "precio": 349.99,
+    "stock": 8,
+    "urlImg": "https://picsum.photos/id/4/200/200",
+    "descripcion": "Una tablet con pantalla táctil de 10 pulgadas y gran capacidad de almacenamiento."
+  },
+  {
+    "id": 5,
+    "nombre": "Cámara digital",
+    "precio": 499.99,
+    "stock": 3,
+    "urlImg": "https://picsum.photos/id/5/200/200",
+    "descripcion": "Una cámara digital de alta resolución con opciones de grabación en 4K."
+  },
+  {
+    "id": 6,
+    "nombre": "Altavoz Bluetooth",
+    "precio": 79.99,
+    "stock": 20,
+    "urlImg": "https://picsum.photos/id/6/200/200",
+    "descripcion": "Un altavoz portátil con conectividad Bluetooth y batería de larga duración."
+  },
+  {
+    "id": 7,
+    "nombre": "Monitor gaming",
+    "precio": 299.99,
+    "stock": 6,
+    "urlImg": "https://picsum.photos/id/7/200/200",
+    "descripcion": "Un monitor de alta frecuencia de actualización y tiempo de respuesta rápido para los amantes de los videojuegos."
+  },
+  {
+    "id": 8,
+    "nombre": "Impresora multifuncional",
+    "precio": 199.99,
+    "stock": 12,
+    "urlImg": "https://picsum.photos/id/8/200/200",
+    "descripcion": "Una impresora que también puede escanear y copiar documentos de manera eficiente."
+  },
+  {
+    "id": 9,
+    "nombre": "Reproductor de Blu-ray",
+    "precio": 129.99,
+    "stock": 7,
+    "urlImg": "https://picsum.photos/id/9/200/200",
+    "descripcion": "Un reproductor de Blu-ray de alta calidad con capacidad de reproducción de contenido en 3D."
+  },
+  {
+    "id": 10,
+    "nombre": "Portátil",
+    "precio": 1199.99,
+    "stock": 2,
+    "urlImg": "https://picsum.photos/id/10/200/200",
+    "descripcion": "Un portátil de alto rendimiento con procesador de última generación y pantalla de alta resolución."
+  },
+  {
+    "id": 11,
+    "nombre": "Smartwatch",
+    "precio": 199.99,
+    "stock": 9,
+    "urlImg": "https://picsum.photos/id/11/200/200",
+    "descripcion": "Un reloj inteligente con funciones de seguimiento de actividad y notificaciones."
+  },
+  {
+    "id": 12,
+    "nombre": "Router Wi-Fi",
+    "precio": 79.99,
+    "stock": 15,
+    "urlImg": "https://picsum.photos/id/12/200/200",
+    "descripcion": "Un router Wi-Fi de alta velocidad con cobertura amplia y opciones de configuración avanzadas."
+  },
+  {
+    "id": 13,
+    "nombre": "Teclado mecánico",
+    "precio": 129.99,
+    "stock": 4,
+    "urlImg": "https://picsum.photos/id/13/200/200",
+    "descripcion": "Un teclado mecánico con retroiluminación RGB y teclas programables para jugadores y programadores."
+  },
+  {
+    "id": 14,
+    "nombre": "Mouse gaming",
+    "precio": 59.99,
+    "stock": 18,
+    "urlImg": "https://picsum.photos/id/14/200/200",
+    "descripcion": "Un mouse ergonómico especialmente diseñado para jugadores con sensor de alta precisión."
+  },
+  {
+    "id": 15,
+    "nombre": "Cargador portátil",
+    "precio": 39.99,
+    "stock": 11,
+    "urlImg": "https://picsum.photos/id/15/200/200",
+    "descripcion": "Un cargador portátil de gran capacidad para cargar dispositivos móviles sobre la marcha."
+  },
+  {
+    "id": 16,
+    "nombre": "Monitor curvo",
+    "precio": 499.99,
+    "stock": 6,
+    "urlImg": "https://picsum.photos/id/16/200/200",
+    "descripcion": "Un monitor curvo de alta resolución para una experiencia de visualización inmersiva."
+  },
+  {
+    "id": 17,
+    "nombre": "Impresora 3D",
+    "precio": 599.99,
+    "stock": 3,
+    "urlImg": "https://picsum.photos/id/17/200/200",
+    "descripcion": "Una impresora 3D que permite dar vida a tus diseños en tres dimensiones."
+  },
+  {
+    "id": 18,
+    "nombre": "Barra de sonido",
+    "precio": 249.99,
+    "stock": 9,
+    "urlImg": "https://picsum.photos/id/18/200/200",
+    "descripcion": "Una barra de sonido compacta y potente para mejorar el audio de tu televisor."
+  },
+  {
+    "id": 19,
+    "nombre": "Batería externa",
+    "precio": 49.99,
+    "stock": 20,
+    "urlImg": "https://picsum.photos/id/19/200/200",
+    "descripcion": "Una batería externa de alta capacidad para cargar tus dispositivos en cualquier lugar."
+  },
+  {
+    "id": 20,
+    "nombre": "Sistema de sonido envolvente",
+    "precio": 799.99,
+    "stock": 4,
+    "urlImg": "https://picsum.photos/id/20/200/200",
+    "descripcion": "Un sistema de sonido envolvente con altavoces inalámbricos para una experiencia de audio inmersiva."
+  }
 ]
+
+
+
+
+
+
+
